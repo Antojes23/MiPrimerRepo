@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Elegante - Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Moda Elegante">
+            </div>
+            <div class="cart-wrapper">
+                <div class="cart-icon-container">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Filtro de género horizontal -->
+        <section class="filter-section">
+            <h2>Género</h2>
+            <div class="horizontal-filters">
+                <button class="filter-btn active" data-genero="all">Todos</button>
+                <button class="filter-btn" data-genero="hombres">Hombres</button>
+                <button class="filter-btn" data-genero="mujeres">Mujeres</button>
+                <button class="filter-btn" data-genero="ninos">Niños</button>
+            </div>
+        </section>
+
+        <!-- Filtro de categoría horizontal -->
+        <section class="filter-section">
+            <h2>Categoría</h2>
+            <div class="horizontal-filters">
+                <button class="category-btn active" data-categoria="all">Todos</button>
+                <button class="category-btn" data-categoria="camisas">Camisas</button>
+                <button class="category-btn" data-categoria="pantalones">Pantalones</button>
+                <button class="category-btn" data-categoria="vestidos">Vestidos</button>
+                <button class="category-btn" data-categoria="zapatos">Zapatos</button>
+                <button class="category-btn" data-categoria="accesorios">Accesorios</button>
+            </div>
+        </section>
+
+        <section class="products-grid">
+            <!-- Los productos se cargarán aquí dinámicamente -->
+        </section>
+
+        <div class="pagination">
+            <button id="prev-page">Anterior</button>
+            <div class="page-numbers"></div>
+            <button id="next-page">Siguiente</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>ventasvillacostvenezuela@gmail.com</p>
+                <p>0424-436.92.30</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#">📱</a>
+                    <a href="#">📘</a>
+                    <a href="#">📸</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Moda Villacost. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal del Carrito -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3>Tu Carrito</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items-container">
+                <!-- Los productos del carrito se cargarán aquí -->
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-price">$0.00</span>
+                </div>
+                <button class="checkout-btn">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
